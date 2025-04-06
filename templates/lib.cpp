@@ -39,7 +39,7 @@ bool isPalindrome(const string& s) {
 * @param string t sと等しい長さの文字列
 * @return int 2つの文字列のハミング距離
 */
-int hammingDistance(const string& s, const string t) {
+int getHammingDistance(const string& s, const string t) {
   if ( s.size() != t.size() ) return -1;
   const int n = s.size();
   int res = 0;
