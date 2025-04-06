@@ -49,6 +49,17 @@ int getHammingDistance(const string& s, const string t) {
   return res;
 }
 
+/*
+* @param long long n 数
+* @return vector<int> nの各桁が格納された数の列
+*/
+vector<int> getDigits(const long long n) {
+  const string s(to_string(n));
+  vector<int> digits;
+  for ( int i = 0; i < s.size(); ++i ) digits.emplace_back(s[i]-'0');
+  return digits;
+}
+
 int main() {
   return 0;
 }
