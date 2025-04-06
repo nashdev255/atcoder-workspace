@@ -12,7 +12,7 @@ using ll = long long;
 * @param int n 指数
 * @return long long xのn乗
 */
-long long powll(int x, int n) {
+long long powll(const int x, const int n) {
   long long res = 1;
   for ( int i = 0; i < n; ++i ) res *= x;
   return res;
