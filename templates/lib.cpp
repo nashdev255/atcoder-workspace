@@ -60,6 +60,16 @@ vector<int> getDigits(const long long n) {
   return digits;
 }
 
+/*
+* @param long long 割られる数
+* @param long long 割る数
+* @return long long 正の余り
+*/
+long long pMOD(const long long n, const long long m) {
+  const long long remainder = ( ( n % m ) + m ) % m;
+  return remainder;
+}
+
 int main() {
   return 0;
 }
